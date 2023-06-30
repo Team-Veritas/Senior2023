@@ -41,7 +41,7 @@ def robot_stop(text):
         right_motor.hold()
         
     else:
-    # elif text == "brake":
+        # elif text == "brake":
         left_motor.brake()
         right_motor.brake()
 

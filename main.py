@@ -21,15 +21,11 @@ color_1 = LightSensor(Port.S1)
 color_2 = LightSensor(Port.S4)
 # color_3 = ColorSensor(Port.S)
 
+
+left_arm.run_time(-700,500)
+left_arm.brake()
+wait(400)
 step_1()
 
-# while True:
-#     print(color_1.reflection(), color_2.reflection())
-# drive = DriveBase(left_motor,right_motor, 56, 162)
 
-# drive.settings(736, 1000, 736,1000)
-# drive.straight(100)
-# drive.stop()
 
-# go_line(80,405)
-# robot_stop("brake")
