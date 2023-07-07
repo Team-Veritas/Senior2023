@@ -48,7 +48,7 @@ def step_1():
     robot_stop("brake")
 
     drive.settings(736, 1000, 736,1000)
-    drive.straight(240)
+    drive.straight(260)
     drive.stop()
     robot_stop("brake")
 
@@ -57,3 +57,10 @@ def step_1():
     drive.turn(90)
     drive.stop()
     robot_stop("brake")
+    drive.settings(736, 1000, 736,1000)
+    drive.straight(-290)
+    drive.stop()
+    robot_stop("brake")
+    right_arm.run_time(-700,500)
+    right_arm.brake()
+    wait(400)
