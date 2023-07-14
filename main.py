@@ -10,7 +10,7 @@ from pybricks.nxtdevices import*
 from module_line import go_line
 from module_stop import *
 from step_1 import *
-
+from step_2 import *
 ev3 = EV3Brick()
 left_motor = Motor(Port.A, Direction.COUNTERCLOCKWISE)
 right_motor= Motor(Port.D,  Direction.COUNTERCLOCKWISE)
@@ -25,13 +25,7 @@ color_2 = LightSensor(Port.S4)
 left_arm.run_time(-700,500)
 left_arm.brake()
 wait(400)
-right_arm.run_time(-700,500)
-right_arm.brake()
-wait(400)
-right_arm.run_time(700,390)
-right_arm.brake()
-wait(400)
-step_1()
-
+# step_1()
+step_2()
 
 
