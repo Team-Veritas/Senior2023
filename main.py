@@ -24,8 +24,14 @@ color_2 = LightSensor(Port.S4)
 
 left_arm.run_time(-700,500)
 left_arm.brake()
+right_arm.run_time(-700,450)
+right_arm.brake()
 wait(400)
-# step_1()
-step_2()
+right_arm.run_time(700,340)
+right_arm.brake()
+wait(400)
+
+step_1()
+# step_2()
 
 
